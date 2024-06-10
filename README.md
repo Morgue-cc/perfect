@@ -16,13 +16,13 @@
 
 
 ## 二、项目结构
-├── hnn_preprocessing  
-│   └── embaddings_process.py  
-│   └── getStru2Vec.py  
-│   └── process_single_corpus.py  
-│   └── python_structured.py  
-│   └── sqlang_structured.py  
-│   └── word_dirt.py  
+|── hnn_preprocessing  
+|   └── embaddings_process.py  
+|   └── getStru2Vec.py  
+|   └── process_single_corpus.py  
+|   └── python_structured.py  
+|   └── sqlang_structured.py  
+|   └── word_dirt.py 
 
 
 ## 三、项目文件说明
