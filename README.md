@@ -139,20 +139,20 @@
 
 3. **类和方法说明**
 
-- repair_program_io: 处理 Python 代码中的 Jupyter Notebook 或 REPL 特有输入输出标记，以获得干净的代码文本。
-- get_vars: 从 Python 抽象语法树(AST)中提取所有变量名并按字典序返回。
-- get_vars_heuristics: 当 AST 解析失败时，使用启发式方法从代码中尽可能提取变量名。
-- PythonParser: 解析 Python 代码，提取变量名，并尝试进行代码标记化。
-- revert_abbrev: 将英文缩略词还原为完整形式的单词。
-- get_wordpos: 根据词性标记返回对应的 WordNet 词性。
-- process_nl_line: 预处理自然语言文本，包括格式化和去除无关字符。
-- process_sent_word: 对句子进行分词、词性标注、还原和提取词干。
-- filter_all_invachar: 去除所有可能导致解析错误的非常用字符。
-- filter_part_invachar: 去除部分可能导致解析错误的非常用字符。
-- python_code_parse: 对 Python 代码字符串进行解析，提取标记化的代码块。
-- python_query_parse: 解析 Python 相关的查询文本，提取标记化的单词列表。
-- python_context_parse: 解析 Python 上下文中的文本，提取标记化的单词列表。
-- main(): 用于演示上述函数如何处理给定的代码和文本查询。
+- repair_program_io 函数: 处理 Python 代码中的 Jupyter Notebook 或 REPL 特有输入输出标记，以获得干净的代码文本。
+- get_vars 函数: 从 Python 抽象语法树(AST)中提取所有变量名并按字典序返回。
+- get_vars_heuristics 函数: 当 AST 解析失败时，使用启发式方法从代码中尽可能提取变量名。
+- PythonParser 函数: 解析 Python 代码，提取变量名，并尝试进行代码标记化。
+- revert_abbrev 函数: 将英文缩略词还原为完整形式的单词。
+- get_wordpos 函数: 根据词性标记返回对应的 WordNet 词性。
+- process_nl_line 函数: 预处理自然语言文本，包括格式化和去除无关字符。
+- process_sent_word 函数: 对句子进行分词、词性标注、还原和提取词干。
+- filter_all_invachar 函数: 去除所有可能导致解析错误的非常用字符。
+- filter_part_invachar 函数: 去除部分可能导致解析错误的非常用字符。
+- python_code_parse 函数: 对 Python 代码字符串进行解析，提取标记化的代码块。
+- python_query_parse 函数: 解析 Python 相关的查询文本，提取标记化的单词列表。
+- python_context_parse 函数: 解析 Python 上下文中的文本，提取标记化的单词列表。
+- main() 函数: 用于演示上述函数如何处理给定的代码和文本查询。
 
 4. **优化说明**
 
@@ -176,13 +176,13 @@
 
 3. **类和方法说明**
 
-- tokenizeRegex: 使用正则表达式分析和提取字符串中的特定模式，返回匹配的结果列表。
-- SqlangParser.sanitizeSql: 清理和标准化输入的 SQL 查询字符串 sql，如去除不必要的字符，添加分号结尾等。
-- SqlangParser.parseStrings: 分析和处理字符串标记 tok，将其转换为规定的格式或使用正则表达式进行分词。
-- SqlangParser.renameIdentifiers: 重命名 SQL 查询中的列和表标识符 tok，为它们生成新的名称并更新映射。
-- SqlangParser.getTokens: 从解析树 parse 中提取并返回所有标记的列表。
-- sqlang_code_parse: 用于处理输入的代码行 line，包括过滤无效字符、标记化、重命名标识符等，最终返回处理后的标记列表。
-- query_parse: 处理输入的查询 query，通过调用其他函数对查询进行分析和处理，返回处理后的结果。
+- tokenizeRegex 函数: 使用正则表达式分析和提取字符串中的特定模式，返回匹配的结果列表。
+- SqlangParser.sanitizeSql 函数: 清理和标准化输入的 SQL 查询字符串 sql，如去除不必要的字符，添加分号结尾等。
+- SqlangParser.parseStrings 函数: 分析和处理字符串标记 tok，将其转换为规定的格式或使用正则表达式进行分词。
+- SqlangParser.renameIdentifiers 函数: 重命名 SQL 查询中的列和表标识符 tok，为它们生成新的名称并更新映射。
+- SqlangParser.getTokens 函数: 从解析树 parse 中提取并返回所有标记的列表。
+- sqlang_code_parse 函数: 用于处理输入的代码行 line，包括过滤无效字符、标记化、重命名标识符等，最终返回处理后的标记列表。
+- query_parse 函数: 处理输入的查询 query，通过调用其他函数对查询进行分析和处理，返回处理后的结果。
 
 4. **优化说明**
 
