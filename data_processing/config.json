@@ -1,0 +1,53 @@
+{
+    "python": {
+        "vec_bin_path": "../hnn_process/embeddings/10_10/python_struc2vec.bin",
+        "word_path": "../hnn_process/data/word_dict/python_word_vocab_dict.txt",
+        "word_vec_path": "../hnn_process/embeddings/python/python_word_vocab_final.pkl",
+        "word_dict_path": "../hnn_process/embeddings/python/python_word_dict_final.pkl",
+        "serialization_paths": [
+            ["../hnn_process/ulabel_data/staqc/python_staqc_unlabled_data.txt",
+                "../hnn_process/ulabel_data/staqc/seri_python_staqc_unlabled_data.pkl"],
+            ["../hnn_process/ulabel_data/large_corpus/multiple/python_large_multiple_unlable.txt",
+                "../hnn_process/ulabel_data/large_corpus/multiple/seri_python_large_multiple_unlable.pkl"],
+            ["../hnn_process/ulabel_data/python_staqc_qid2index_blocks_unlabeled.txt",
+                "../hnn_process/ulabel_data/staqc/python_staqc_unlabled_data.pkl"]
+        ],
+        "hnn": "./data/python_hnn_data_teacher.txt",
+        "staqc": "./data/staqc/python_staqc_data.txt",
+        "word_dict": "./data/word_dict/python_word_vocab_dict.txt",
+        "staqc_path": "./ulabel_data/python_staqc_qid2index_blocks_unlabeled.txt",
+        "staqc_single_save": "./ulabel_data/staqc/single/python_staqc_single.txt",
+        "staqc_multiple_save": "./ulabel_data/staqc/multiple/python_staqc_multiple.txt",
+        "large_path": "./ulabel_data/python_codedb_qid2index_blocks_unlabeled.pickle",
+        "large_single_save": "./ulabel_data/large_corpus/single/python_large_single.pickle",
+        "large_multiple_save": "./ulabel_data/large_corpus/multiple/python_large_multiple.pickle",
+        "large_single_label_save": "./ulabel_data/large_corpus/single/python_large_single_label.txt"
+    },
+    "sql": {
+        "vec_bin_path": "../hnn_process/embeddings/10_8_embeddings/sql_struc2vec.bin",
+        "word_path": "../hnn_process/data/word_dict/sql_word_vocab_dict.txt",
+        "word_vec_path": "../hnn_process/embeddings/sql/sql_word_vocab_final.pkl",
+        "word_dict_path": "../hnn_process/embeddings/sql/sql_word_dict_final.pkl",
+        "serialization_paths": [
+            ["../hnn_process/ulabel_data/staqc/sql_staqc_unlabled_data.txt",
+                "../hnn_process/ulabel_data/staqc/seri_sql_staqc_unlabled_data.pkl"],
+            ["../hnn_process/ulabel_data/large_corpus/multiple/sql_large_multiple_unlable.txt",
+                "../hnn_process/ulabel_data/large_corpus/multiple/seri_sql_large_multiple_unlable.pkl"],
+            ["../hnn_process/ulabel_data/sql_staqc_qid2index_blocks_unlabeled.txt",
+                "../hnn_process/ulabel_data/staqc/sql_staqc_unlabled_data.pkl"]
+        ],
+        "hnn": "./data/sql_hnn_data_teacher.txt",
+        "staqc": "./data/staqc/sql_staqc_data.txt",
+        "word_dict": "./data/word_dict/sql_word_vocab_dict.txt",
+        "new_staqc": "./ulabel_data/staqc/sql_staqc_unlabeled_data.txt",
+        "new_large": "./ulabel_data/large_corpus/multiple/sql_large_multiple_unlabeled.txt",
+        "large_word_dict_sql": "./ulabel_data/sql_word_dict.txt",
+        "staqc_path": "./ulabel_data/sql_staqc_qid2index_blocks_unlabeled.txt",
+        "staqc_single_save": "./ulabel_data/staqc/single/sql_staqc_single.txt",
+        "staqc_multiple_save": "./ulabel_data/staqc/multiple/sql_staqc_multiple.txt",
+        "large_path": "./ulabel_data/sql_codedb_qid2index_blocks_unlabeled.pickle",
+        "large_single_save": "./ulabel_data/large_corpus/single/sql_large_single.pickle",
+        "large_multiple_save": "./ulabel_data/large_corpus/multiple/sql_large_multiple.pickle",
+        "large_single_label_save": "./ulabel_data/large_corpus/single/sql_large_single_label.txt"
+    }
+}
